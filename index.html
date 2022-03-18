@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS-->
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <!--CSS PROPIO-->
+      <link href="./css/estilo.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.min.css">
+      <title>KFIT</title>
+   </head>
+   <body>
+      <!--HEADER-->
+      <div class="container-fluid bg-light">
+         <a class="Contacto" href="#contacto">
+            <p class="Contacto text-end p-1">Contáctanos</p>
+         </a>
+      </div>
+      <header class="container-fluid bg-white text-dark p-3 text-start">
+         <div class="subtexto text-start">
+            <h1 class="d-inline"> KFIT </h1>
+            <p class="subtext d-inline"> The Best Fit Product Comparator</p>
+         </div>
+      </header>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-light p-1">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#productos">Productos</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="./aboutus.html">Sobre Nosotros</a>
+                  </li>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link text-white" role="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+                     <div id="id01" class="modal">
+                        <form class="modal-content animate" action="./index.html" method="post">
+                           <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="./img/avatar.png" alt="Avatar" class="avatar">
+                           </div>
+                           <div class="container">
+                              <label for="uname"><b>Usuario</b></label>
+                              <input type="text" placeholder="Introducir Usuario" name="uname" required>
+                              <label for="psw"><b>Contraseña</b></label>
+                              <input type="password" placeholder="Introducir Contraseña" name="psw" required>
+                              <button type="submit">Login</button>
+                              <label>
+                              <input type="checkbox" checked="checked" name="remember"> Recordarme
+                              </label>
+                           </div>
+                           <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                              <span class="psw">¿Has olvidado tu <a href="#">contraseña?</a></span>
+                           </div>
+                        </form>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid bg-light">
+         <p class="quequieres text-dark text-center p-1">¿Qué quieres mirar hoy?</p>
+      </div>
+      <!--CONTENIDO-->
+      <div class="fotoslide">
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>-->
+            <div class="carousel-inner">
+               <div data-bs-interval="3500" class="carousel-item active">
+                  <center><img src="./img/slide1.jpg" class="d-block" alt="..." ></center>
+               </div>
+               <div data-bs-interval="3500" class="carousel-item">
+                  <center><img src="./img/slide2.jpg" class="d-block" alt="..."></center>
+               </div>
+               <div data-bs-interval="3500" class="carousel-item">
+                  <center><img src="./img/slide3.jpg" class="d-block" alt="..."></center>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid bg-white text-center p-5">
+         <h1 id="productos">Top Ventas</h1>
+      </div>
+      <div class="fila">
+         <div class="colu">
+            <a href="./creatina.html">
+            <img src="./img/popu1.png"></img>
+            </a>  
+            <p> Creatina </p>
+         </div>
+         <div class="colu">
+            <a href="./creatina.html">
+            <img src="./img/popu2.png">
+            </a>
+            <p>Whey Protein
+            <p>
+         </div>
+         <div class="colu">
+            <a href="./creatina.html">
+            <img class="fotopeque" src="./img/popu3.png">
+            </a>
+            <p class="mt-4">Whey Protein
+            <p>
+         </div>
+         <div class="colu">
+            <a href="./creatina.html">
+            <img class="fotopeque2 "src="./img/popu4.png">
+            </a>
+            <p class="mt-4 ms-2">Shaker</p>
+         </div>
+         <div class="clearer"></div>
+      </div>
+      <div class="footer" id="contacto">
+         <div class="columid">
+            <p class="pt-3">Redes Sociales <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/?hl=es"><small> @kfit</small></a> <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/?lang=es"><small>@kfittw</small></a></p>
+         </div>
+         <div class="columid text-center">
+            <h1>KFIT</h1>
+         </div>
+         <div class="columid text-end">
+            <a class="gmail" href="https://www.google.com/intl/es/gmail/about/"><p class="pt-3">Contacto: kfit@gmail.com</p></a>
+         </div>
+         <div class="clearer"></div>
+      </div>
+      <script src="./js/bootstrap.bundle.min.js">
+         // Get the modal
+         var modal = document.getElementById('id01');
+         
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+         if (event.target == modal) {
+         modal.style.display = "none";
+         }
+         }
+      </script>
+   </body>
+</html>

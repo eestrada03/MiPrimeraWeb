@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS-->
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <!--CSS PROPIO-->
+      <link href="./css/estilo.css" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.min.css">
+      <title>KFIT</title>
+   </head>
+   <body>
+   <!--HEADER-->
+      <div class="container-fluid bg-light">
+        <a class="Contacto" href="#contacto"><p class="Contacto text-end p-1">Contáctanos</p></a>
+
+
+      </div>
+      <header class="container-fluid bg-white text-dark p-3 text-start">
+         
+        <div class="subtexto text-start"> 
+         <h1 class="d-inline"> KFIT </h1>
+
+          
+           <p class="subtext d-inline"> The Best Fit Product Comparator</p>
+        
+         </div>
+</header>
+<!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-light p-1">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                     <a class="nav-link active  text-white" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="./index.html">Productos</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">Sobre Nosotros</a>
+                     </li>
+                  
+                  </li>
+
+                  
+               </ul>
+
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+
+                       <a class="nav-link text-white" role="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+
+                        <div id="id01" class="modal">
+                          
+                          <form class="modal-content animate" action="./index.html" method="post">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="./img/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                              <label for="uname"><b>Usuario</b></label>
+                              <input type="text" placeholder="Introducir Usuario" name="uname" required>
+
+                              <label for="psw"><b>Contraseña</b></label>
+                              <input type="password" placeholder="Introducir Contraseña" name="psw" required>
+                                
+                              <button type="submit">Login</button>
+                              <label>
+                                <input type="checkbox" checked="checked" name="remember"> Recordarme
+                              </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                              <span class="psw">¿Has olvidado tu <a href="#">contraseña?</a></span>
+                            </div>
+                          </form>
+                        </div>
+                     </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container-fluid bg-light">
+        <p class="quequieres text-dark text-center p-1">¿Qué quieres mirar hoy?</p>
+
+      </div>
+
+      <!--CONTENIDO-->
+
+      <div class="boutus">
+         <h1 class="text-center">"Sobre Nosotros"</h1>
+
+         <p style="text-align: justify; width: 96%; margin-right: 2%; margin-left: 2%;">Lorem Ipsum
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sit amet ipsum nec dignissim. Aenean consequat eu neque eget dignissim. Donec rhoncus nulla non consectetur rutrum. Nam efficitur placerat fringilla. Cras tincidunt enim egestas tellus semper, a commodo elit sagittis. Maecenas sed ligula eu leo feugiat ultrices non quis velit. Nunc dui nulla, gravida sed massa sed, imperdiet mollis quam.
+
+Pellentesque commodo diam suscipit sagittis ornare. Vestibulum ac ante euismod, semper metus ut, fringilla dolor. Mauris vitae egestas ex. Pellentesque ut est leo. Morbi lacus nunc, imperdiet et blandit non, sagittis placerat diam. Phasellus quis dignissim erat. Suspendisse potenti. Praesent viverra id odio at feugiat. Lorem Ipsum
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sit amet ipsum nec dignissim. Aenean consequat eu neque eget dignissim. Donec rhoncus nulla non consectetur rutrum. Nam efficitur placerat fringilla. Cras tincidunt enim egestas tellus semper, a commodo elit sagittis. Maecenas sed ligula eu leo feugiat ultrices non quis velit. Nunc dui nulla, gravida sed massa sed, imperdiet mollis quam.
+
+Pellentesque commodo diam suscipit sagittis ornare. Vestibulum ac ante euismod, semper metus ut, fringilla dolor. Mauris vitae egestas ex. Pellentesque ut est leo. Morbi lacus nunc, imperdiet et blandit non, sagittis placerat diam. Phasellus quis dignissim erat. Suspendisse potenti. Praesent viverra id odio at feugiat. Lorem Ipsum
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sit amet ipsum nec dignissim. Aenean consequat eu neque eget dignissim. Donec rhoncus nulla non consectetur rutrum. Nam efficitur placerat fringilla. Cras tincidunt enim egestas tellus semper, a commodo elit sagittis. Maecenas sed ligula eu leo feugiat ultrices non quis velit. Nunc dui nulla, gravida sed massa sed, imperdiet mollis quam.
+
+Pellentesque commodo diam suscipit sagittis ornare. Vestibulum ac ante euismod, semper metus ut, fringilla dolor. Mauris vitae egestas ex. Pellentesque ut est leo. Morbi lacus nunc, imperdiet et blandit non, sagittis placerat diam. Phasellus quis dignissim erat. Suspendisse potenti. Praesent viverra id odio at feugiat.</p>
+      </div>
+
+      <div class="footer" id="contacto">
+
+            <div class="columid">
+
+               <p class="pt-3">Redes Sociales <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/?hl=es"><small> @kfit</small></a> <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/?lang=es"><small>@kfittw</small></a></p>
+
+
+            </div>
+
+            <div class="columid text-center">
+
+               <h1>KFIT</h1>
+               
+            </div>
+
+            <div class="columid text-end">
+
+                <a class="gmail" href="https://www.google.com/intl/es/gmail/about/"><p class="pt-3">Contacto: kfit@gmail.com</p></a>
+
+            </div>
+
+             <div class="clearer"></div>
+
+         </div>
+               
+    
+
+      <script src="./js/bootstrap.bundle.min.js">
+         // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+      </script>
+
+      </body>
+
+      </html>
+
